@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    background-color: cadetblue;
+}
+
+.container {
+    width: 700px;
+    min-height: 500px;
+    background-color: white;
+    padding: 40px;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border: 4px solid #404040;
+    border-radius: 10px;
+}
+
+.btn-create {
+    padding: 10px;
+    background-color: darkgray;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.btn-create:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+}
+
+#list-task {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.task {
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.task.complete {
+    text-decoration: line-through;
+    background-color: black;
+    border: none;
+}
+
+.task p {
+    max-width: 350px;
+}
+
+i {
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon-complete {
+    color: rgb(0,255,0);
+}
+
+.icon-delete {
+    color: white;
+}
+
+.icon-complete:hover,
+.icon-delete:hover {
+    background-color: rgba(255,255,255,0.523);
+}
